@@ -9,3 +9,5 @@ echo "Opening eclipse..."
 echo "Starting JavaScript on back-end..."
 node ~/public_html/newSaudeSystem/medicsystem-web/src/index.js &
 
+echo "Opening Firefox Browser"
+firefox localhost:9000 & 

@@ -1,5 +1,8 @@
 !#/bin/bash
-echo "Hello World"
+
+echo "clearnig port 9000"
+sudo ps -ef | sudo grep php-fpm | sudo grep -v grep | sudo awk '{print $2}' | sudo xargs kill
+
 echo "Opening atom..."
 atom ~/public_html/newSaudeSystem
 

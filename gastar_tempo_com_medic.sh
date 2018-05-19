@@ -9,6 +9,9 @@ atom ~/public_html/newSaudeSystem
 echo "Opening eclipse..."
 /home/vasconcelos/eclipse/jee-latest-released/eclipse/eclipse -data $HOME/eclipse-workspace/ &
 
+echo "Starting Keycloak server..."
+~/public_html/exp2/keycloak-4.0.0.Beta1/bin/standalone.sh -Djboss.socket.binding.port-offset=100 &
+
 echo "Starting JavaScript on back-end..."
 node ~/public_html/newSaudeSystem/medicsystem-web/src/index.js &
 

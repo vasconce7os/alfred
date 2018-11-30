@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Encoding=UTF-8
+Terminal=false
+Name=Gnome CLI
+Exec=gnome-terminal --maximize --title="Hi there" -e 'zsh -c "~/alfred/greetings.sh; sleep 2; zsh"'
+Comment=Test of initialize
+X-GNOME-Autostart-enabled=true
+Categories=Utility;Development;
